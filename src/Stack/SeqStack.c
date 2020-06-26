@@ -8,7 +8,7 @@
 #define StackInitSize 100
 
 /**
- * 栈数据结构定义
+ * 顺序栈数据结构定义
  */
 typedef struct {
     int data[StackInitSize];
