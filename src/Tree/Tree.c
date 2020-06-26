@@ -82,3 +82,21 @@ void PostOrder(BiTree root) {
     }
 }
 
+/**
+ * 创建二叉树
+ * @return
+ */
+BiTree CreatBiTree() {
+    char ch;
+    BiTree T;
+    scanf("%c", &ch);
+    if (ch == '#') {
+        T = NULL;
+    } else {
+        T = (BiTNode *) malloc(sizeof(BiTNode));
+        T->data = ch;
+        T->lChild = CreatBiTree();
+        T->rChild = CreatBiTree();
+    }
+    return T;
+}
